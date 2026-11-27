@@ -1,108 +1,78 @@
 # SmartLib – AI Library Assistant
 
-**Project:** SmartLib – AI Library Assistant  
-**Program:** Drive Ready – AI Agents | OPC 2026
+**Program:** Drive Ready – AI Agents | OPC 2026  
+**Case study:** SmartLib – AI Library Assistant
 
 ## Objective
 
-Build an AI-powered library assistant that helps students search for books, check book availability, and manage borrowing requests through natural language conversations.
+Build an AI-powered library assistant that helps students search for books, check availability, get book information and manage borrowing requests using natural language.
 
-SmartLib is a practice project designed to demonstrate how an LLM can understand student queries, retrieve library-related information, and assist with basic library operations.
+## Topics covered
 
-## Features
+- AI applications and LLM integration
+- Natural language-based book search
+- Book availability and information retrieval
+- System prompts and AI assistant behaviour
+- Hallucination prevention and handling missing information
+- Borrowing request management
 
-- Search books by title, author, or category.
-- Answer book availability questions.
-- Provide book details and information.
-- Assist students with borrowing requests.
-- Understand natural language queries.
-- Respond using structured and user-friendly answers.
-- Handle unavailable information without inventing details.
+## Files
 
-## Core Functionalities
-
-| **Feature** | **Purpose** |
+| **File** | **Purpose** |
 |---|---|
-| Book Search | Find books using titles, authors, or keywords. |
-| Availability Check | Check whether a requested book is available. |
-| Book Information | Provide details about books. |
-| Borrowing Requests | Help students initiate borrowing requests. |
-| AI Conversation | Understand and respond to student questions. |
+| `task.py` | Python source code for the SmartLib AI Library Assistant |
+| `LLM_Fundamentals.ipynb` | Original Google Colab practical work and outputs (uploaded separately) |
+| `README.md` | Task description, implementation, observations and next-step preparation |
 
-## Example User Queries
+## Implementation
+
+SmartLib uses an LLM-powered assistant to understand student queries and provide library-related information. It supports book searches, availability questions and borrowing requests.
+
+Actual book availability and borrowing operations require integration with a library database or backend system.
+
+### Main functionalities
+
+| **Functionality** | **Description** |
+|---|---|
+| Book Search | Search by title, author or category |
+| Availability Check | Check book availability |
+| Book Information | Retrieve book and author details |
+| Borrowing Requests | Assist students with borrowing requests |
+
+## Preparation — Ten customer questions
 
 1. Do you have Python programming books?
-2. Is the book Clean Code available?
+2. Is Clean Code available?
 3. Who is the author of Atomic Habits?
-4. Show me books related to Artificial Intelligence.
+4. Show me Artificial Intelligence books.
 5. Can I borrow a Java programming book?
-6. Which books are available for learning Data Structures?
-7. How many copies of Python books are available?
-8. I want to borrow Clean Code. How can I request it?
-9. Suggest some books for beginners in programming.
-10. Is the book available for borrowing right now?
+6. Which books are available for Data Structures?
+7. How many Python books are available?
+8. How can I request Clean Code?
+9. Suggest beginner programming books.
+10. Is the requested book available for borrowing?
 
-## Expected AI Behaviour
+## How to run
 
-- Provide information based on the available library data.
-- Never invent book titles, authors, or availability status.
-- Clearly inform users when a book is unavailable or its details are missing.
-- Ask for clarification when a search query is ambiguous.
-- Do not confirm a borrowing request unless the request has actually been processed.
-- Keep responses simple, clear, and student-friendly.
+Install the required dependency:
 
-## Technical Implementation
+`pip install openai`
 
-SmartLib is designed as an AI-powered library assistant. The application can use an LLM through an API to understand natural language queries and generate relevant responses.
+Set the required API key securely in your environment.
 
-The system can be extended with:
-- A book catalogue/database.
-- An LLM API for natural language understanding.
-- Search functionality for retrieving book information.
-- Borrowing request management.
-- A user-friendly interface for students.
+Run the application:
 
-**Note:** Actual book availability and borrowing operations require integration with a library database or backend service. An LLM prompt alone cannot perform these operations.
+`python task.py`
 
-## Sample Interaction
+Never commit or print API keys.
 
-**User:** Do you have Python programming books?
+**Note:** Actual book searches, availability checks and borrowing operations require library database integration.
 
-**SmartLib:** Yes! I can help you find Python programming books. Would you like to see books for beginners or advanced learners?
-
-**User:** Is Clean Code available?
-
-**SmartLib:** I will check the library catalogue for the availability of Clean Code. 
-
-*The actual availability response depends on the connected library database.*
-
-## Future Enhancements
-
-- Student login and authentication.
-- Real-time book availability tracking.
-- Book reservation and cancellation.
-- Borrowing history.
-- Due-date reminders.
-- Book recommendations based on student interests.
-- Integration with an actual library management system.
-
-## Project Status
+## Learning assessment and status
 
 - Project concept: Defined.
 - Main functionalities: Identified.
-- AI assistant behaviour: Planned.
-- Library database integration: To be implemented.
-- Borrowing request management: To be implemented.
-
-## Learning Outcomes
-
-Through this project, students can learn:
-
-1. How LLMs understand natural language queries.
-2. How to connect an LLM to an external API.
-3. How to design effective system prompts.
-4. How to retrieve information from a database.
-5. How to prevent hallucinations using factual data.
-6. How to integrate AI with real-world application workflows.
-
-**SmartLib – Making Library Access Smarter with AI.**
+- Ten customer questions: Prepared.
+- AI assistant implementation: To be completed.
+- Library database integration: Pending.
+- Borrowing request management: Pending.
